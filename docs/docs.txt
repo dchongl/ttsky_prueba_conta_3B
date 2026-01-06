@@ -1,0 +1,1 @@
+Este proyecto diseña un contador de 8 bits el cual utiliza led's de 7 segmentos para mostrar el numero actual, también se cuenta con un reset para mandar a cero en cualquier momento.
