@@ -49,7 +49,7 @@ module tt_um_conta (
     assign uo_out[6:0] = out;
     assign uio_out[2:0] = selec;
 
-    D7S TOP_Unit(
+    D7S D7S_Unit(
         .clk(clk),
         .rst(rst_n),
         .transistor(selec),
