@@ -7,14 +7,16 @@ You can also include images in this folder and reference them in the markdown. E
 512 kb in size, and the combined size of all images must be less than 1 MB.
 -->
 
+Contador usando 3D7S, usando un reloj.
 ## How it works
 
-Utiliza system verilog para generar un codigo el cual podra utilizar 3 led´s de 7 segmentos para indicar los numeros
+Utiliza un oscilador como reloj y con base en ese reloj se implementa un circuito contador. Posteriormente se aplica el algoritmo doble dabble. Se pasa por una especie de tabla y se multiplexa
 
 ## How to test
 
-Al momemto de intalar en una fpga este empezara y el llegar a 255 se reiniciara 
+Es tan simple como conectar el reloj y los displays de 7 segmentos. Dado que no tiene señales de entrada.
 
 ## External hardware
 
-FPGA
+1.- Display de 7 segmentos
+2.- Botón de reset
