@@ -1,29 +1,30 @@
 # Tiny Tapeout project information
 project:
-  title:        "Contador"      # Project title
-  author:       "Equipo"      # Your name
-  discord:      "no hay"      # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
-  description:  "Este proyecto diseña un contador de 8 bits el cual utiliza led's de 7 segmentos para mostrar el numero actual, también se cuenta con un reset para mandar a cero en cualquier momento."      # One line description of what your project does
+  title:        "D7S"      # Project title
+  author:       "Equipo de lógicos"      # Your name
+  discord:      "alonsobravo"      # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
+  description:  "contador con display"      # One line description of what your project does
   language:     "SystemVerilog" # other examples include SystemVerilog, Amaranth, VHDL, etc
-  clock_hz:     20       # Clock frequency in Hz (or 0 if not applicable)
+  clock_hz:     10000000       # Clock frequency in Hz (or 0 if not applicable)
 
   # How many tiles your design occupies? A single tile is about 167x108 uM.
   tiles: "1x1"          # Valid values: 1x1, 1x2, 2x2, 3x2, 4x2, 6x2 or 8x2
 
   # Your top module name must start with "tt_um_". Make it unique by including your github username:
-  top_module:  "tt_um_conta"
+  top_module:  "tt_um_D7S"
 
   # List your project's source files here.
   # Source files must be in ./src and you must list each source file separately, one per line.
   # Don't forget to also update `PROJECT_SOURCES` in test/Makefile.
   source_files:
     - "project.v"
+    - "D7S.sv"    
 
 # The pinout of your project. Leave unused pins blank. DO NOT delete or add any pins.
 # This section is for the datasheet/website. Use descriptive names (e.g., RX, TX, MOSI, SCL, SEG_A, etc.).
 pinout:
   # Inputs
-  ui[0]: "rst"
+  ui[0]: ""
   ui[1]: ""
   ui[2]: ""
   ui[3]: ""
@@ -33,24 +34,25 @@ pinout:
   ui[7]: ""
 
   # Outputs
-  uo[0]: "A"
-  uo[1]: "B"
-  uo[2]: "C"
-  uo[3]: "D"
-  uo[4]: "E"
-  uo[5]: "F"
-  uo[6]: "G"
-  uo[7]: ""
+  uo[0]: ""
+  uo[1]: "d7"
+  uo[2]: "d6"
+  uo[3]: "d5"
+  uo[4]: "d4"
+  uo[5]: "d3"
+  uo[6]: "d2"
+  uo[7]: "d1"
 
   # Bidirectional pins
-  uio[0]: "t1"
-  uio[1]: "t2"
-  uio[2]: "t3"
+  uio[0]: ""
+  uio[1]: ""
+  uio[2]: ""
   uio[3]: ""
   uio[4]: ""
-  uio[5]: ""
-  uio[6]: ""
-  uio[7]: ""
+  uio[5]: "t3"
+  uio[6]: "t2"
+  uio[7]: "t1"
+
 
 # Do not change!
 yaml_version: 6
